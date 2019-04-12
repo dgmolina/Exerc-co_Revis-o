@@ -6,7 +6,7 @@
     <title>Exercício de Revisão</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-    <script src="main.js"></script>
+    <script src="scripts/main.js"></script>
 </head>
 <body>
 
@@ -15,17 +15,17 @@
             <img class="logo" src="images/faculdade-impacta.png" alt="Logo Impacta" height="70" width="200">
             <h3 class="right-header">Exercício de Revisão</h3>
         </div>
-        <div class="navegacao">
+        <nav class="navegacao">
             <ul>
                 <li><a href="#secao1">Descrição</a></li>
                 <li><a href="#secao2">Listagens</a></li>
                 <li><a href="#secao3">Formulário</a></li>
                 <li><a href="#secao4">Tabela</a></li>
             </ul>
-        </div>
+        </nav>
     </header>
     <hr>
-    <div class="secao1" id="secao1">
+    <section class="secao1" id="secao1">
         <h1>Descrição</h1>
         <img src="images/300.jpg">
         <p>Lorem ipsum lacinia scelerisque duis taciti pulvinar cras nec laoreet, torquent et ut integer feugiat volutpat etiam fames, lobortis senectus elementum volutpat velit nibh condimentum commodo. turpis himenaeos orci donec cras venenatis nisi donec nulla lobortis habitant curae non suscipit id pulvinar, hendrerit metus dictum dapibus justo habitasse ornare ut ligula libero vivamus viverra hac nec. aliquet felis pellentesque tortor curabitur pulvinar quis nostra, felis sem gravida per sit facilisis, eu nibh bibendum morbi hac leo. neque dictumst leo sociosqu vestibulum nec posuere vehicula litora commodo, scelerisque turpis quis class praesent ad quisque inceptos mollis maecenas, etiam fringilla elementum sed lorem pharetra nam mattis.</p>
@@ -33,54 +33,59 @@
         <p>Feugiat vitae amet hac semper curae consequat etiam non sed id ante, feugiat porttitor arcu aliquam himenaeos nam sodales donec condimentum etiam, malesuada consequat quis vivamus suscipit nisl pulvinar ultricies habitant phasellus. laoreet integer sollicitudin pellentesque odio porta nam leo nunc commodo turpis sagittis pharetra, diam eu varius scelerisque vitae aenean fringilla donec praesent primis pretium. ut mollis senectus orci luctus ligula varius at venenatis iaculis, taciti justo nisi sit quam donec turpis dui facilisis, fames ultrices faucibus tortor senectus fames nunc maecenas. sed aliquet fermentum ipsum donec scelerisque curabitur magna bibendum, donec pretium aliquam maecenas vehicula elementum lobortis, laoreet donec varius euismod condimentum euismod vivamus.</p>
         <img src="images/300.jpg">
         <p>Turpis phasellus pulvinar quisque habitasse non adipiscing euismod neque ipsum mi urna, lacus interdum venenatis et molestie himenaeos non mollis quam tincidunt augue, odio vivamus nec placerat rhoncus libero litora faucibus metus feugiat. nullam nostra torquent suspendisse ultrices ipsum, ultrices tincidunt aptent mauris est, tincidunt euismod ac ut. himenaeos sollicitudin urna felis scelerisque turpis ullamcorper dictumst curabitur maecenas, inceptos tristique mattis curabitur sed metus velit litora mauris, curae morbi senectus erat platea semper elementum neque. elementum interdum pretium lobortis hendrerit felis diam est nisi, vehicula curae vulputate mattis dapibus fusce.</p>
-    </div>
-    <div class="secao2" id="secao2">
+    </section>
+    <hr>
+    <section class="secao2" id="secao2">
         <h1>Listagens</h1>
-        <h3>Ranking de Alunos - Batalha de Robos</h3>
+        <h4>Ranking de Alunos - Batalha de Robos</h4>
         <ol>
             <li>Jõao</li>
             <li>Pedro</li>
             <li>Lais</li>
         </ol>
-        <h3>Matérias Oferecidas</h3>
+        <h4>Matérias Oferecidas</h4>
         <ul>
             <li>Lógica de Programação</li>
             <li>Tecnologia WEB</li>
             <li>Banco de Dados</li>
         </ul>
-    </div>
-    <div class="secao3" id="secao3">
+    </section>
+    <hr>
+    <section class="secao3" id="secao3">
         <h1>Formulário</h1>
         
-        <form>
-            <label for="nome-completo">Nome Completo: </label><br>
-            <input id="nome-completo" name="nome-completo" type="text">
+        <form method="GET" id="form-pessoa">
+            <label for="nomeCompleto">Nome Completo: </label><br>
+            <input id="nomeCompleto" name="nomeCompleto" type="text">
             <br>
-            <label for="cor-favorita">Cor Favorita: </label><br>
-            <input id="cor-favorita" name="cor-favorita" type="color">
+            <label for="corFavorita">Cor Favorita: </label><br>
+            <input id="corFavorita" name="corFavorita" type="color">
             <br>
             <label for="nascimento">Nascimento: </label><br>
             <input id="nascimento" name="nascimento" type="date">
+            <br>
             <label for="salario">Salário: </label><br>
             <input id="salario" name="salario" type="number">
-            
+            <br><br>
+            <input id="enviar" type="button" value="Enviar" onclick="fillTable()"><input type="reset" value="Limpar Formulário" id="limpar">
 
         </form>
-    </div>
-    <div class="secao4" id="secao4">
+        <br>
+    </section>
+    <hr>
+    <section class="secao4" id="secao4">
         <h1>Tabela</h1>
-        <p>A</p>
-        <p>A</p>
-        <p>A</p>
-        <p>A</p>
-        <p>A</p>
-        <p>A</p>
-        <p>A</p>
-        <p>A</p>
-        <p>A</p>
-        <p>A</p>
-        <p>A</p>
-    </div>
+        <table id="tabela-pessoa">
+            <th>Nome</th>
+            <th>Cor Favorita</th>
+            <th>Nascimento</th>
+            <th>Salário</th>
+        </table>
+    </section>
+    <hr>
+    <footer>
+
+    </footer>
     
 </body>
 </html>
