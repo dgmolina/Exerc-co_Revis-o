@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacao {
+    display: flex;
+    justify-content: center;
+}
+
+.navegacao ul {
+    padding:0px;
+    margin:0px;
+    background-color:#EDEDED;
+    list-style:none;
+}
+
+.navegacao ul li {
+    display: inline;
+}
