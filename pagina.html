@@ -10,10 +10,10 @@
 </head>
 <body>
 
-    <header>
-        <div class="header">
-            <img class="logo" src="images/faculdade-impacta.png" alt="Logo Impacta" height="70" width="200">
-            <h3 class="right-header">Exercício de Revisão</h3>
+    <header class="header">
+        <div class="insideHeader">
+            <img class="logo" src="images/faculdade-impacta.png" alt="Logo Impacta" height="70" width="200" onclick="msgLogo()">
+            <h3 class="rightHeader">Exercício de Revisão</h3>
         </div>
         <nav class="navegacao">
             <ul>
@@ -27,47 +27,68 @@
     <hr>
     <section class="secao1" id="secao1">
         <h1>Descrição</h1>
-        <img src="images/300.jpg">
-        <p>Lorem ipsum lacinia scelerisque duis taciti pulvinar cras nec laoreet, torquent et ut integer feugiat volutpat etiam fames, lobortis senectus elementum volutpat velit nibh condimentum commodo. turpis himenaeos orci donec cras venenatis nisi donec nulla lobortis habitant curae non suscipit id pulvinar, hendrerit metus dictum dapibus justo habitasse ornare ut ligula libero vivamus viverra hac nec. aliquet felis pellentesque tortor curabitur pulvinar quis nostra, felis sem gravida per sit facilisis, eu nibh bibendum morbi hac leo. neque dictumst leo sociosqu vestibulum nec posuere vehicula litora commodo, scelerisque turpis quis class praesent ad quisque inceptos mollis maecenas, etiam fringilla elementum sed lorem pharetra nam mattis.</p>
-        <img src="images/300.jpg">
-        <p>Feugiat vitae amet hac semper curae consequat etiam non sed id ante, feugiat porttitor arcu aliquam himenaeos nam sodales donec condimentum etiam, malesuada consequat quis vivamus suscipit nisl pulvinar ultricies habitant phasellus. laoreet integer sollicitudin pellentesque odio porta nam leo nunc commodo turpis sagittis pharetra, diam eu varius scelerisque vitae aenean fringilla donec praesent primis pretium. ut mollis senectus orci luctus ligula varius at venenatis iaculis, taciti justo nisi sit quam donec turpis dui facilisis, fames ultrices faucibus tortor senectus fames nunc maecenas. sed aliquet fermentum ipsum donec scelerisque curabitur magna bibendum, donec pretium aliquam maecenas vehicula elementum lobortis, laoreet donec varius euismod condimentum euismod vivamus.</p>
-        <img src="images/300.jpg">
-        <p>Turpis phasellus pulvinar quisque habitasse non adipiscing euismod neque ipsum mi urna, lacus interdum venenatis et molestie himenaeos non mollis quam tincidunt augue, odio vivamus nec placerat rhoncus libero litora faucibus metus feugiat. nullam nostra torquent suspendisse ultrices ipsum, ultrices tincidunt aptent mauris est, tincidunt euismod ac ut. himenaeos sollicitudin urna felis scelerisque turpis ullamcorper dictumst curabitur maecenas, inceptos tristique mattis curabitur sed metus velit litora mauris, curae morbi senectus erat platea semper elementum neque. elementum interdum pretium lobortis hendrerit felis diam est nisi, vehicula curae vulputate mattis dapibus fusce.</p>
+        <div class="secao1Parte1">
+            <img src="images/300.jpg">
+
+            <p>Lorem ipsum lacinia scelerisque duis taciti pulvinar cras nec laoreet, torquent et ut integer feugiat volutpat etiam fames, lobortis senectus elementum volutpat velit nibh condimentum commodo. turpis himenaeos orci donec cras venenatis nisi donec nulla lobortis habitant curae non suscipit id pulvinar, hendrerit metus dictum dapibus justo habitasse ornare ut ligula libero vivamus viverra hac nec. aliquet felis pellentesque tortor curabitur pulvinar quis nostra, felis sem gravida per sit facilisis, eu nibh bibendum morbi hac leo. neque dictumst leo sociosqu vestibulum nec posuere vehicula litora commodo, scelerisque turpis quis class praesent ad quisque inceptos mollis maecenas, etiam fringilla elementum sed lorem pharetra nam mattis.</p>
+        </div>
+        <div class="secao1Parte2">
+            <p>Feugiat vitae amet hac semper curae consequat etiam non sed id ante, feugiat porttitor arcu aliquam himenaeos nam sodales donec condimentum etiam, malesuada consequat quis vivamus suscipit nisl pulvinar ultricies habitant phasellus. laoreet integer sollicitudin pellentesque odio porta nam leo nunc commodo turpis sagittis pharetra, diam eu varius scelerisque vitae aenean fringilla donec praesent primis pretium. ut mollis senectus orci luctus ligula varius at venenatis iaculis, taciti justo nisi sit quam donec turpis dui facilisis, fames ultrices faucibus tortor senectus fames nunc maecenas. sed aliquet fermentum ipsum donec scelerisque curabitur magna bibendum, donec pretium aliquam maecenas vehicula elementum lobortis, laoreet donec varius euismod condimentum euismod vivamus.</p>
+
+            <img src="images/300.jpg">
+
+            <p>Turpis phasellus pulvinar quisque habitasse non adipiscing euismod neque ipsum mi urna, lacus interdum venenatis et molestie himenaeos non mollis quam tincidunt augue, odio vivamus nec placerat rhoncus libero litora faucibus metus feugiat. nullam nostra torquent suspendisse ultrices ipsum, ultrices tincidunt aptent mauris est, tincidunt euismod ac ut. himenaeos sollicitudin urna felis scelerisque turpis ullamcorper dictumst curabitur maecenas, inceptos tristique mattis curabitur sed metus velit litora mauris, curae morbi senectus erat platea semper elementum neque. elementum interdum pretium lobortis hendrerit felis diam est nisi, vehicula curae vulputate mattis dapibus fusce.</p>
+        </div>
+
     </section>
     <hr>
     <section class="secao2" id="secao2">
         <h1>Listagens</h1>
-        <h4>Ranking de Alunos - Batalha de Robos</h4>
-        <ol>
-            <li>Jõao</li>
-            <li>Pedro</li>
-            <li>Lais</li>
-        </ol>
-        <h4>Matérias Oferecidas</h4>
-        <ul>
-            <li>Lógica de Programação</li>
-            <li>Tecnologia WEB</li>
-            <li>Banco de Dados</li>
-        </ul>
+
+        <div class="secao2Flex">
+
+            <div class="lista1">
+                <h4>Ranking de Alunos - Batalha de Robos</h4>
+                <ol>
+                    <li onclick="msgOrdenedList(this)">Jõao</li>
+                    <li onclick="msgOrdenedList(this)">Pedro</li>
+                    <li onclick="msgOrdenedList(this)">Lais</li>
+                </ol>
+            </div>
+            <div class="lista2">
+                <h4>Matérias Oferecidas</h4>
+                <ul>
+                    <li onclick="msgUnordenedList(this)">Lógica de Programação</li>
+                    <li onclick="msgUnordenedList(this)">Tecnologia WEB</li>
+                    <li onclick="msgUnordenedList(this)">Banco de Dados</li>
+                </ul>
+            </div>
+        </div>
+
     </section>
+    <div class="clear"></div>
     <hr>
     <section class="secao3" id="secao3">
         <h1>Formulário</h1>
         
         <form method="GET" id="form-pessoa">
-            <label for="nomeCompleto">Nome Completo: </label><br>
-            <input id="nomeCompleto" name="nomeCompleto" type="text">
-            <br>
-            <label for="corFavorita">Cor Favorita: </label><br>
+            <p>
+            <label for="nomeCompleto">Nome Completo: </label>
+            <input id="nomeCompleto" name="nomeCompleto" type="text" onfocusout="validateField(this)">
+            </p>
+            <p>
+            <label for="corFavorita">Cor Favorita: </label>
             <input id="corFavorita" name="corFavorita" type="color">
-            <br>
-            <label for="nascimento">Nascimento: </label><br>
-            <input id="nascimento" name="nascimento" type="date">
-            <br>
-            <label for="salario">Salário: </label><br>
-            <input id="salario" name="salario" type="number">
-            <br><br>
-            <input id="enviar" type="button" value="Enviar" onclick="fillTable()"><input type="reset" value="Limpar Formulário" id="limpar">
+            </p>
+            <p>
+            <label for="nascimento">Nascimento: </label>
+            <input id="nascimento" name="nascimento" type="date" onfocusout="validateField(this)">
+            </p>
+            <p>
+            <label for="salario">Salário: </label>
+            <input id="salario" name="salario" type="number" onfocusout="validateField(this)">
+            </p><br>
+            <input id="enviar" type="button" value="Enviar" onclick="validateForm()"><input type="reset" value="Limpar Formulário" id="limpar">
 
         </form>
         <br>
@@ -84,8 +105,11 @@
     </section>
     <hr>
     <footer>
-
+        <h2>Exercício de Revisão | Daniel Gomes Molina 1802223</h2>
     </footer>
+
+    <!--td auxiliar para que a função deleteRow() funcione-->
+    <td class="auxDeleteRow"></td>
     
 </body>
 </html>

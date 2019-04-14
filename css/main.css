@@ -1,6 +1,7 @@
 table {
     border-collapse: collapse;
     width: 100%;
+    border: 1px solid black;
 }
 
 th, td {
@@ -10,8 +11,24 @@ th, td {
 }
 
 .header {
+    background-color: blue;
+    color: white;
+    border-style: solid;
+    border-width: 0 0 2px 0;
+    border-color: black;
+}
+
+.insideHeader {
     display: flex;
     justify-content: space-between;
+}
+
+.logo {
+    margin-top: 18px; 
+}
+
+.rightHeader {
+    margin-top: 45px;
 }
 
 .navegacao {
@@ -22,10 +39,152 @@ th, td {
 .navegacao ul {
     padding:0px;
     margin:0px;
-    background-color:#EDEDED;
     list-style:none;
 }
 
 .navegacao ul li {
     display: inline;
+}
+
+.navegacao ul li a {
+    text-decoration: none;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: white;
+    font-weight: bold;
+}
+
+.navegacao ul li a:hover {
+    background-color: red;
+}
+
+.navegacao ul li a:active {
+    background-color: green;
+}
+
+div.clear {
+    clear: both;
+}
+
+.secao1{
+    display: block;
+}
+
+.secao1 p{
+    margin-top: 0px;
+    margin-left: 5px;
+}
+
+.secao1 img{
+    margin-left: 5px;
+}
+
+.secao1Parte1{
+    display: flex;
+}
+
+.secao1Parte2{
+    display: flex;
+}
+
+
+.secao1 p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+}
+
+.secao2 {
+}
+
+.lista1, .lista2{
+    padding-left: 50px;
+    float: left;
+}
+
+
+
+
+.secao2 ul, ol {
+    list-style:none;
+}
+
+.secao2 ol li{
+    width: 200px;
+    background-color: gray;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+.secao2 ol li:hover {
+    background-color: green;
+    color: red;
+}
+
+.secao2 ul li{
+    width: 200px;
+    background-color: blue;
+    color: white;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: white;
+}
+
+.secao2 ul li:hover {
+    background-color: red;
+    color: green;
+}
+
+.secao3 label{
+    font-weight: bold;
+}
+
+.secao3 input:focus {
+    background-color: #a5ff4a;
+}
+
+.secao3 form  { display: table;      }
+.secao3 p     { display: table-row;  }
+.secao3 label { display: table-cell; }
+.secao3 input { display: table-cell; }
+
+.secao4 {
+    align-content: center;
+}
+
+.secao4 table {
+    margin: 1em auto;
+    max-width: 500px;
+}
+
+.secao4 table th {
+    background-color: black;
+    color: white;
+}
+
+.secao4 table td {
+    background-color: gray;
+    font-weight: bold;
+}
+
+footer {
+    height: 100px;
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+
+footer h2{
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+    padding-top: 40px;
+}
+
+.auxDeleteRow {
+    display: none;
 }
